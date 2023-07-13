@@ -1,5 +1,3 @@
-// import React, { useState } from "react";
-
 export default function About(props) {
   return (
     <>
@@ -9,7 +7,7 @@ export default function About(props) {
           backgroundColor: props.theme === "dark" ? "#212529" : "white",
           color: props.theme === "dark" ? "white" : "black",
         }}>
-        <h1>this is a heading</h1>
+        <h1>About Text Manipulator</h1>
         <div className="accordion" id="accordionExample">
           <div className="accordion-item">
             <h2 className="accordion-header" id="headingOne">
@@ -25,7 +23,7 @@ export default function About(props) {
                 aria-expanded="true"
                 aria-controls="collapseOne">
                 {" "}
-                Accordion Item #1
+                Easy to Use
               </button>
             </h2>
             <div
@@ -38,15 +36,10 @@ export default function About(props) {
               aria-labelledby="headingOne"
               data-bs-parent="#accordionExample">
               <div className="accordion-body">
-                <strong>This is the first item's accordion body.</strong> It is
-                shown by default, until the collapse plugin adds the appropriate
-                classes that we use to style each element. These classes control
-                the overall appearance, as well as the showing and hiding via
-                CSS transitions. You can modify any of this with custom CSS or
-                overriding our default variables. It's also worth noting that
-                just about any HTML can go within the{" "}
-                <code>.accordion-body</code>, though the transition does limit
-                overflow.
+                <strong>Our Text Manipulator is easy to use. </strong> simply
+                you just have to copy and paste a paragrah or a sentence, no
+                matter how much its length is. Our app will tell the the eact
+                word counts, alphabet count and timeto read it.
               </div>
             </div>
           </div>
@@ -64,7 +57,7 @@ export default function About(props) {
                 aria-expanded="false"
                 aria-controls="collapseTwo">
                 {" "}
-                Accordion Item #2
+                convert text
               </button>
             </h2>
             <div
@@ -77,15 +70,49 @@ export default function About(props) {
               aria-labelledby="headingTwo"
               data-bs-parent="#accordionExample">
               <div className="accordion-body">
-                <strong>This is the second item's accordion body.</strong> It is
-                hidden by default, until the collapse plugin adds the
-                appropriate classes that we use to style each element. These
-                classes control the overall appearance, as well as the showing
-                and hiding via CSS transitions. You can modify any of this with
-                custom CSS or overriding our default variables. It's also worth
-                noting that just about any HTML can go within the{" "}
-                <code>.accordion-body</code>, though the transition does limit
-                overflow.
+                <strong>
+                  You can convert your text to upper and lower case.
+                </strong>{" "}
+                Simply just copy your text and press the "To Upper Case" button
+                to convert it to Upper case, and press "TO Lower Case" to
+                convert it to lower case. You can also copy whole text from the
+                "Copy" button
+              </div>
+            </div>
+          </div>
+
+          <div className="accordion-item">
+            <h2 className="accordion-header" id="headingTwo">
+              <button
+                style={{
+                  backgroundColor: props.theme === "dark" ? "#212529" : "white",
+                  color: props.theme === "dark" ? "white" : "black",
+                }}
+                className="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseTwo"
+                aria-expanded="false"
+                aria-controls="collapseTwo">
+                {" "}
+                More Features In Future
+              </button>
+            </h2>
+            <div
+              style={{
+                backgroundColor: props.theme === "dark" ? "#30353b" : "white",
+                color: props.theme === "dark" ? "white" : "black",
+              }}
+              id="collapseTwo"
+              className="accordion-collapse collapse"
+              aria-labelledby="headingTwo"
+              data-bs-parent="#accordionExample">
+              <div className="accordion-body">
+                <strong>
+                  More Features</strong> We will keep updating this app
+                wth more feature in the future. This is just a practice project
+                for my full stack developer journey.
+                <br /> <strong>Developed by Shibly</strong>
               </div>
             </div>
           </div>
